@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup button</title>
+    <style>
+       .box{
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        margin: auto;
+        margin-top: 100px;
+        position: relative;
+        left: 0px;
+       }
+
+       .car{
+         height: 500px;
+         width: 500px;
+         position: absolute;
+         left: 500px;
+         opacity: 0;
+         bottom: 0;
+
+
+       }
+
+       .box:hover .car{
+        left: 0px;
+        transition: 3s;
+        opacity: 1;
+
+       }
+
+       /* .box:hover .car{
+        left: 500px;
+        transition: 3s;
+        opacity: 0;
+
+       } */
+
+       .btn{
+        width: 100%;
+        background-color:rgba(0,0,0,0.6);
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        opacity: 0;
+        transition: 5s;
+
+       }
+       .box:hover .btn{
+        bottom: 0px;
+        opacity: 1;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="car">
+        <img src="./pexels-yurii-hlei-1545743.jpg" alt="" width="100%" height="100%">
+    </div>
+        <input type="button" value="Add to car" class="btn">
+    </div>
+</body>
+</html>
