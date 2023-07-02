@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+
+            height: 180px;
+            width: 600px;
+            border: 2px solid red;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+
+        }
+
+        .class{
+            height: 100px;
+            width: 100px;
+            margin-top: 40px;
+            background-color: aqua;
+            position: absolute;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            /* animation-timing-function: linear; */
+            animation-timing-function: ease;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        @keyframes box{
+               
+            from{
+                left: 0px;
+            }
+
+            to{
+                left: 500px
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="class"></div>
+    </div>
+</body>
+</html>
