@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+
+            height: 600px;
+            width: 600px;
+            border: 2px solid red;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+
+        }
+
+        .class{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            /* animation-name: box;
+            animation-duration: 10s; */
+            animation: box 5s;
+            animation-delay: 3s;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation-iteration-count: 2;
+            animation-fill-mode: both;
+            animation-direction: alternate-reverse;
+        }
+
+    @keyframes box{
+        0%{
+             background-color: aqua;
+             top: 0px;
+             left: 0px;
+        }
+
+        25%{
+            background-color: blueviolet;
+            top: 0px;
+            left: 500px;
+        }
+
+        50%{
+            background-color: royalblue;
+            top: 500px;
+            left: 500px;
+        }
+
+        75%{
+            background-color: rgb(5, 5, 97);
+            top: 500px;
+            left: 0px;
+        }
+        100%{
+             background-color: aqua;
+             top: 0px;
+             left: 0px;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="class"></div>
+    </div>
+</body>
+</html>
